@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Vazir";
+  src: local("Vazir"), url(./fonts/Vazir.ttf) format("truetype");
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  direction: rtl;
+  background: rgb(193, 237, 193);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Vazir !important;
+}
+.container{
+  width: 400px;
+}
+.form{
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  
+  
+}
+.form input{
+  padding: 10px;
+  border: none;
+  margin:0 10px ;
+  border-radius: 5px;
+
+}
+.form button{
+  background: red;
+  color: #fff;
+  width: 80px;
+  border: none;
+  box-shadow: 1px salmon;
+  cursor: pointer;
+
+}
+.container p{
+  padding-top: 50px;
+}
