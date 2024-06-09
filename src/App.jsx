@@ -6,13 +6,12 @@ import data from "./data"
 function App() {
   const [count, setCount]=useState(0)
   const [text , setText]=useState([])
-  
+
  const submitHandler=(e)=>{
-e.preventdefault()
-setText(data)
+  e.preventDefault()
+setText(data);
  }
- const clickHandler=(e)=>{
-  e.target.value   }
+
  
 
 
@@ -22,7 +21,7 @@ setText(data)
         <h4>لورم ساز</h4>
         <form  className="form" onSubmit={submitHandler}>
           <label>تعداد پاراگراف :</label>
-          <input type="number" name="total" value={text} onChange={clickHandler} />
+          <input type="number" name="total" value={count} onChange={(e)=>setCount(e.target.value)} />
           <button type="submit">بساز</button>
         </form>
         <article> {
