@@ -9,7 +9,15 @@ function App() {
 
  const submitHandler=(e)=>{
   e.preventDefault()
-setText(data);
+  let amount=parseInt(count)
+  if(amount<0){
+    amount=0
+  }
+  if(amount>4){
+    amount=4
+  }
+  console.log(count)
+setText(data.slice(0 ,amount));
  }
 
  
